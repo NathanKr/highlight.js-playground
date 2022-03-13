@@ -38,3 +38,7 @@ Add the following to your html file. replace /path with the current path
 </li>
 
 </ul>
+
+
+<h2>Result</h2>
+![Screenshot](result_highlight.png)
