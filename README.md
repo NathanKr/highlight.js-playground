@@ -13,7 +13,7 @@ Add the following to your html file. replace /path with the current path. In ind
 ````
 
 </li>
-<li>add html code as follows ( notice that you need to replace <,> )
+<li>add html code as follows ( notice that you need to replace <,> with &lt; , &gt; respectively)
 
 ```
 <pre><code class="language-html">
