@@ -4,7 +4,7 @@ Experiment with highlight.js
 <h2>Browser usage</h2>
 <ul>
 <li>
-Add the following to yout html file
+Add the following to your html file. replace /path with the current path
 
 ```
 <link rel="stylesheet" href="/path/to/styles/default.min.css">
