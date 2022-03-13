@@ -22,8 +22,6 @@ Add the following to your html file. replace /path with the current path. In ind
 ````
 
 </li>
-
-
 <li>add javascript code as follows 
 
 ```
@@ -36,7 +34,11 @@ Add the following to your html file. replace /path with the current path. In ind
 ````
 
 </li>
+</ul>
 
+<h2>Points of interest</h2>
+<ul>
+<li>One will get the same results removing the class language-javascript \ language-html</li>
 </ul>
 
 
