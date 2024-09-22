@@ -33,7 +33,7 @@
     <li>Add a class to the <code>&lt;code&gt;</code> element that starts with <code>language-</code>, such as <code>language-html</code>. This enables <code>hljs.highlightAll()</code> to recognize and style the code based on the selected theme, which is <code>vs.min.css</code> in this example.</li>
 </ul>
 <p>
-    <img src="https://github.com/NathanKr/highlight.js-playground/blob/main/figs/post-processing.png" alt="Post-Processing Example">
+    <img src="https://github.com/NathanKr/highlight.js-playground/blob/main/figs/post-processing.png?raw=true" alt="Post-Processing Example">
 </p>
 
 <h2>HTML Example</h2>
@@ -54,5 +54,5 @@
 <h2>Result</h2>
 <p>The syntax-highlighted code will be displayed similar to the image below:</p>
 <p>
-    <img src="https://github.com/NathanKr/highlight.js-playground/blob/main/figs/result_highlight.png" alt="Highlighted Result">
+    <img src="https://github.com/NathanKr/highlight.js-playground/blob/main/figs/result_highlight.png?raw=true" alt="Highlighted Result">
 </p>
