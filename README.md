@@ -1,82 +1,58 @@
+<h1>Experimenting with highlight.js for Browser Syntax Highlighting</h1>
+
 <h2>Motivation</h2>
-Experiment with highlight.js in the browser
- to use color as done e.g. in vs code 
+<p>This project demonstrates how to use <code>highlight.js</code> in the browser to achieve syntax highlighting similar to what is found in VS Code.</p>
 
 <h2>Usage</h2>
-Invoke index.html
+<p>Simply open <code>index.html</code> in your browser.</p>
 
-<h2>Instalaltion</h2>
-None , cdn are all ready used in index.html
+<h2>Installation</h2>
+<p>No installation required. CDN links are already included in <code>index.html</code>.</p>
 
 <h2>Ingredients of highlight.js</h2>
-Add the following to your html file. replace /path with the current path. In index.html i have used path to cdn and replaced the default css with vs (code) css. There are three ingridents
+<p>To set up <code>highlight.js</code>, you need to include the following in your HTML file. In <code>index.html</code>, CDN paths are used, and the default CSS is replaced with the VS Code theme CSS. The key components are:</p>
 
+<ol>
+    <li>
+        <strong>highlight.js CSS file</strong>
+        <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/styles/default.min.css&quot;&gt;</code></pre>
+    </li>
+    <li>
+        <strong>highlight.js JS file</strong>
+        <pre><code>&lt;script src=&quot;/path/to/highlight.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+    </li>
+    <li>
+        <strong>highlight.js Initialization</strong>
+        <pre><code>&lt;script&gt;hljs.highlightAll();&lt;/script&gt;</code></pre>
+    </li>
+</ol>
+
+<h2>Basic Idea</h2>
 <ul>
-<li>
-highlight.js css file
-
-```
-<link rel="stylesheet" href="/path/to/styles/default.min.css">
-```
-
-</li>
-<li>
-highlight.js js file
-
-```
-<script src="/path/to/highlight.min.js"></script>
-```
-
-</li>
-<li>
-highlight.js js function
-
-```
-<script>hljs.highlightAll()</script>
-```
-
-</li>
-
+    <li>Wrap the code block that you don't want the browser to interpret in <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> elements.</li>
+    <li>Add a class to the <code>&lt;code&gt;</code> element that starts with <code>language-</code>, such as <code>language-html</code>. This enables <code>hljs.highlightAll()</code> to recognize and style the code based on the selected theme, which is <code>vs.min.css</code> in this example.</li>
 </ul>
+<p>
+    <img src="https://github.com/NathanKr/highlight.js-playground/blob/main/figs/post-processing.png" alt="Post-Processing Example">
+</p>
 
+<h2>HTML Example</h2>
+<p>To display HTML code in a readable format, wrap it in the appropriate tags and escape <code>&lt;</code> and <code>&gt;</code>:</p>
+<pre><code>&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;
+    &amp;lt;h1&amp;gt;Hello&amp;lt;/h1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
 
-<h2>Basic idea</h2>
-<ul>
-<li>wrap the part that you dont want the browser to interpret with pre and code eleemnt</li>
-<li>add to the code element a class that start with language e.g. language-html that will be idenetify by hljs.highlightAll() which will add elements and classes that will be style according the the gihjight css file - vs.min.css in this example. check this figure
+<h2>JavaScript Example</h2>
+<p>Here is an example of how to display JavaScript code:</p>
+<pre><code>&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;
+    function sum(num1, num2) {
+        const s = num1 + num2; 
+        return s;
+    }
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
 
-<img  src='./figs/post-processing.png'>
-
-</li>
-</ul>
-
-
-<h2>HTML</h2>
-add html that you want the browser to interprert as code element ( notice that you need to replace <,> with &lt; , &gt; respectively)
-
-```
-<pre><code class="language-html">
-          &lt;h1&gt;Hello&lt;/h1&gt;;
-</code></pre>
-```
-
-<h2>Javascript</h2>
-
-add javascript that you want the browser interprert as code element
-
-```
-<pre><code class="language-javascript">
-        function sum(num1,num2){
-          const s = num1+num2; 
-          return s;
-        }
-</code></pre>
-```
-
-</li>
-</ul>
-
-
-<h2>Result html</h2>
-
-<img src='./figs/result_highlight.png'/>
+<h2>Result</h2>
+<p>The syntax-highlighted code will be displayed similar to the image below:</p>
+<p>
+    <img src="https://github.com/NathanKr/highlight.js-playground/blob/main/figs/result_highlight.png" alt="Highlighted Result">
+</p>
